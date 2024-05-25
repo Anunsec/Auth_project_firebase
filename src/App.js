@@ -1,6 +1,6 @@
 import Login from "./components/auth/login";
 import Register from "./components/auth/register";
-
+import ParticlesBg from 'particles-bg'
 import Header from "./components/header";
 import Home from "./components/home";
 
@@ -30,6 +30,7 @@ function App() {
   return (
     <AuthProvider>
       <Header />
+     <ParticlesBg type="cobweb" bg={true} />
       <div className="w-full h-screen flex flex-col">{routesElement}</div>
     </AuthProvider>
   );
